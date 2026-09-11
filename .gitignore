@@ -1,0 +1,31 @@
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.token
+credentials.json
+client_secret*.json
+application_default_credentials.json
+.cache/huggingface/
+
+# Generated training artifacts and model weights
+outputs/
+checkpoints/
+wandb/
+*.safetensors
+pytorch_model*.bin
+*.ckpt
+*.pt
+*.pth
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Private datasets
+data/private/
+
+# Local environment files
+.venv/
+.DS_Store
